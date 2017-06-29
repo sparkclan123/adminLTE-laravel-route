@@ -125,16 +125,20 @@
             </span>
           </a>
         </li>
-        <li>
-          <a href="/pages/mailbox/mailbox">
+        <li class="treeview">
+          <a href="#">
             <i class="fa fa-envelope"></i> <span>Mailbox</span>
             <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">12</small>
-              <small class="label pull-right bg-green">16</small>
-              <small class="label pull-right bg-red">5</small>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
+          <ul class="treeview-menu">
+            <li><a href="/pages/mailbox/mailbox"><i class="fa fa-circle-o"></i>Mailbox</a></li>
+            <li><a href="/pages/mailbox/compose"><i class="fa fa-circle-o"></i>Compose</a></li>
+            <li><a href="/pages/mailbox/read-mail"><i class="fa fa-circle-o"></i>read-mail</a></li>
+          </ul>
         </li>
+        
         <li class="treeview">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Examples</span>
