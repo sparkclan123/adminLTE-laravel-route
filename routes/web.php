@@ -165,3 +165,7 @@ Route::get('/documentation/index',function(){
     return view('documentation/index');
 });
  });
+
+ Route::get('/profile', 'ProfileController@index');	 
+Route::post('/profile', 'ProfileController@update'); 
+

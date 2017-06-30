@@ -41,8 +41,12 @@ class AuthController extends Controller
                 $name = request('name');
                 $email = request('email');
                 $password = bcrypt(request('password'));
+                $Rpassword = request('password');
+                $cretype_password = request('retype_password');
+                $retype_password = bcrypt(request('retype_password'));
               
-                  
+                //   $this->validate($request, $rules);
+                  if($Rpassword==$cretype_password){
                 DB::table('users')->insert([
                     'name' => $name,
                     'email' => $email,
@@ -50,12 +54,12 @@ class AuthController extends Controller
                   
 
                 ]);
-                $users = DB::table('users')
-                ->paginate(5);
+               
 
 
                 return redirect('login');
-
+                  }else{return "รหัสผ่านไม่ตรงกัน";
+                  }
 
            
 

@@ -1,4 +1,6 @@
 @extends('master')
+@section('footer')
+@endsection
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
