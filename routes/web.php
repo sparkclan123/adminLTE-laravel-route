@@ -15,7 +15,7 @@
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::get('login','AuthController@getLogin')->name('login');
 Route::post('login','AuthController@postLogin');
- Route::get('logout','AuthController@logout');
+Route::get('logout','AuthController@logout');
 Route::get('register','AuthController@register');
 Route::post('register','AuthController@store');
 Route::group(['middleware'=>['auth']],function(){
