@@ -197,7 +197,7 @@
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="fa fa-book">
           <li> @if(auth()->check())
                       <a href="/logout">ออกจากระบบ</a><br>
                          ({{auth()->user()->name}})</li>
