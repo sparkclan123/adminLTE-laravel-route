@@ -16,7 +16,7 @@ class AuthController extends Controller
       if (auth()->attempt($input)){
           return redirect()-> intended('/');
       }else{
-          abort(401);
+          return "รหัสผ่านไม่ถูกต้อง";
       }
     
     }
