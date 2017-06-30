@@ -10,6 +10,16 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('login','AuthController@getLogin')->name('login');
+Route::post('login','AuthController@postLogin');
+ Route::get('logout','AuthController@logout');
+Route::get('register','AuthController@register');
+Route::post('register','AuthController@store');
+Route::group(['middleware'=>['auth']],function(){
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -154,3 +164,4 @@ Route::get('/pages/examples/pace',function(){
 Route::get('/documentation/index',function(){
     return view('documentation/index');
 });
+ });
