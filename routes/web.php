@@ -29,6 +29,15 @@ Route::get('index2',function(){
     return view('index2');
 });
 
+
+Route::get('/pages/member/list','MemberController@indexlist');
+Route::get('/pages/member/add','MemberController@registermember');
+Route::post('/registermember','MemberController@storemember');
+Route::get('/pages/member/edit','MemberController@edit');
+Route::post('/edit', 'MemberController@updateedit'); 
+
+Route::delete('/delete/{user}','MemberController@destroy');
+
 Route::get('/pages/layout/top-nav',function(){
     return view('pages/layout/top-nav');
 });
@@ -164,8 +173,11 @@ Route::get('/pages/examples/pace',function(){
 Route::get('/documentation/index',function(){
     return view('documentation/index');
 });
+
+
  });
 
  Route::get('/profile', 'ProfileController@index');	 
 Route::post('/profile', 'ProfileController@update'); 
 
+ 

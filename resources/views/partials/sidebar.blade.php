@@ -39,6 +39,20 @@
         </li>
         <li class="treeview">
           <a href="#">
+            <i class="fa fa-child"></i>
+            <span>จัดการสมาชิก</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/pages/member/add"><i class="fa fa-circle-o"></i> เพิ่มสมาชิก</a></li>
+            <li><a href="/pages/member/list"><i class="fa fa-circle-o"></i> รายชื่อสมาชิก</a></li>
+         
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
             <i class="fa fa-files-o"></i>
             <span>Layout Options</span>
             <span class="pull-right-container">
