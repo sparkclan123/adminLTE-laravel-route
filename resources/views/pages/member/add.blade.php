@@ -13,7 +13,7 @@
   <div class="register-box-body">
     <p class="login-box-msg">Register a new membership</p>
 
-    <form action="/registermember" method="post" form class="form-horizontal">
+    <form action="/registermember" method="post" form class="modal-body">
      {{csrf_field()}}
       <div class="form-group has-feedback">
         <input type="text" class="form-control" name="name" id="name" placeholder="Full name">

@@ -6,7 +6,7 @@
     <th>ID</th>
     <th>Name</th>
     <th>Email</th>
-
+    <th>Balance</th>
     <th>Action</th>
 </tr>
 @foreach($users as $u)
@@ -14,6 +14,8 @@
             <td> {{ $u->id}}</td>
             <td> {{ $u->name}}</td>
             <td> {{ $u->email}}</td>
+
+            <td></td>
            <td>
                  <form action="/delete/{{$u -> id}}" method="post">
                  {{csrf_field()}}
