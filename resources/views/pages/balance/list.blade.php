@@ -1,8 +1,8 @@
 @extends('master')
 
 @section('content')
-    <p>หน้าฝากเงิน</p>
-<table class="table">
+  <br><p class="login-box-msg">รายการการฝากเงิน (List Deposit)</p>
+<table class="table table-striped">
 
 <tr>
 <th>รหัส</th>
@@ -15,7 +15,7 @@
 <th>ช่องทางการฝาก</th>
 <th>เบอร์โทร</th>
 <th>ความคิดเห็นเพิ่มเติม</th>
-<th>ปุ่ม</th>
+
 </tr>
 
     
@@ -33,7 +33,7 @@
             <td> {{ $d->tel}}</td>
             <td> {{ $d->opinion}}</td>
             
-            <td><a href="/pages/balance/{{ $d ->id}}/edit" class="btn btn-primary" type="text" value="edit">Edit</a></td>
+           
          </tr>
           
     @endforeach

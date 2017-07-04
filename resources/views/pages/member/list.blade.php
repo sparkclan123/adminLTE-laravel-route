@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
-<h>สมาชิก</h>
-<table class='table table-hover'>
+ <br><p class="login-box-msg">รายชื่อสมาชิก</p>
+<table class='table table-striped'>
 <tr>
     <th>ID</th>
     <th>Name</th>
@@ -10,7 +10,7 @@
     <th>Action</th>
 </tr>
 @foreach($users as $u)
-        <tr> 
+        <tr > 
             <td> {{ $u->id}}</td>
             <td> {{ $u->name}}</td>
             <td> {{ $u->email}}</td>
