@@ -26,8 +26,21 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2"><b>Admin</b>LTE</a>
+    <a href="../../index2"><b>Dollar</b>Games</a>
   </div>
+  
+  {{-- session รับมาจากหน้า authcontroller  --}}
+  @if(session()->get('message'))
+     <div class="callout callout-danger">
+          <h4>E-mail or Password</h4>
+
+          <p>กรอก E-mail เเละ password ให้ถูกต้อง</p>
+        </div> 
+       
+  @endif
+
+
+
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
@@ -37,6 +50,7 @@
       <div class="form-group has-feedback">
         <input type="email" class="form-control" name="email" id="email" placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        
       </div>
       <div class="form-group has-feedback">
         <input type="password" class="form-control" name="password" id="password" placeholder="Password">
@@ -58,13 +72,7 @@
       </div>
     </form>
 
-    <div class="social-auth-links text-center">
-      <p>- OR -</p>
-      <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
-        Facebook</a>
-      <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
-        Google+</a>
-    </div>
+  
     <!-- /.social-auth-links -->
 
     <a href="#">I forgot my password</a><br>

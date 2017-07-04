@@ -10,9 +10,12 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  <div class="modal-dialog">
-    <br><p class="login-box-msg">Register a new membership</p>
-
+            
+             <div class="box box-info">  
+                <div class="modal-dialog">
+          
+                 <h3 class="box-title">สมักสมาชิก</h3>
+            
     <form action="/registermember" method="post" form class="modal-body">
      {{csrf_field()}}
       <div class="form-group has-feedback">
@@ -38,8 +41,9 @@
         </div>
         <!-- /.col -->
       </div>
+     
     </form>
-
+ </div>
     
   
 

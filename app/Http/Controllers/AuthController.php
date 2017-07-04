@@ -14,9 +14,13 @@ class AuthController extends Controller
       $input = request()->except(['_token']); 
 
       if (auth()->attempt($input)){
+             session()->flash('message','Delete sucess');
+
           return redirect()-> intended('/');
       }else{
-          return "รหัสผ่านไม่ถูกต้อง";
+
+           session()->flash('message','ใส่ E-mail Password ให้ถูกต้อง');
+          return redirect('login');
       }
     
     }
@@ -37,7 +41,14 @@ class AuthController extends Controller
     {
                 //$input = request()->email;
                 //return $input;
-
+ $rules = [
+                    'name'=> 'required|string|max:255|min:3',
+                    'email'=> 'required|string|max:255|min:3',
+                    'password'=> 'required|string|min:6',
+                    'retype_password'=> 'required|string|min:6'
+                   
+                ];
+                
                 $name = request('name');
                 $email = request('email');
                 $password = bcrypt(request('password'));
@@ -45,7 +56,8 @@ class AuthController extends Controller
                 $cretype_password = request('retype_password');
                 $retype_password = bcrypt(request('retype_password'));
               
-                //   $this->validate($request, $rules);
+                $this->validate($request, $rules);
+                
                   if($Rpassword==$cretype_password){
                 DB::table('users')->insert([
                     'name' => $name,
@@ -58,7 +70,7 @@ class AuthController extends Controller
 
 
                 return redirect('login');
-                  }else{return "รหัสผ่านไม่ตรงกัน";
+                  }else{return 'กรุณากรอกรหัสผ่านให้ตรงกัน';
                   }
 
            

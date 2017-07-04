@@ -26,30 +26,53 @@
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2"><b>Admin</b>LTE</a>
+    <a href="../../index2"><b>Dollar</b>Games</a>
   </div>
 
+
+
   <div class="register-box-body">
-    <p class="login-box-msg">Register a new membership</p>
+    <p class="login-box-msg">กรอกข้อมูลสมัคสมาชิก(Register a new membership)</p> 
 
     <form action="/register" method="post">
      {{csrf_field()}}
       <div class="form-group has-feedback">
         <input type="text" class="form-control" name="name" id="name" placeholder="Full name">
-        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+         
+ 				            <span class="help-block"> 
+ 				                 <p style="color:red"><strong>{{ $errors->first('name') }}</strong> </p>
+ 				            </span> 
+ 				      	             
       </div>
+
       <div class="form-group has-feedback">
         <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+       
+ 				            <span class="help-block"> 
+ 				                <p style="color:red"> <strong>{{ $errors->first('email') }}</strong> </p>
+ 				            </span> 
+ 				         	             
       </div>
+     
+
       <div class="form-group has-feedback">
         <input type="password" class="form-control" name="password" id="password" placeholder="Password">
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+       
+ 				            <span class="help-block"> 
+ 				                 <p style="color:red"><strong>{{ $errors->first('password') }}</strong> </p>
+ 				            </span> 
+ 				  	             
       </div>
+
       <div class="form-group has-feedback">
         <input type="password" class="form-control" name="retype_password" id="password" placeholder="Retype password">
-        <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
-      </div> 
+        
+ 				            <span class="help-block"> 
+ 				                 <p style="color:red"><strong>{{ $errors->first('retype_password') }}</strong> </p>
+ 				            </span> 
+ 				       	             
+      </div>
+     
       <div class="row">
         <div class="col-xs-8">
           <div class="checkbox icheck">
@@ -66,13 +89,6 @@
       </div>
     </form>
 
-    <div class="social-auth-links text-center">
-      <p>- OR -</p>
-      <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign up using
-        Facebook</a>
-      <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign up using
-        Google+</a>
-    </div>
 
     <a href="login" class="text-center">I already have a membership</a>
   </div>

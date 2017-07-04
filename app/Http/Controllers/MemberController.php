@@ -49,7 +49,7 @@ class MemberController extends Controller
 
                 return redirect('/pages/member/add');
                   }else{
-                      return "รหัสผ่านไม่ตรงกันoooo";
+                      return "รหัสผ่านไม่ตรงกัน";
                   }
 
           

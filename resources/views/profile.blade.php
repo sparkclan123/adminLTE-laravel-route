@@ -48,6 +48,17 @@
  				            </span> 
  				        @endif   	                   
  	                </div> 
+
+									  <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}"> 
+ 	                  <label for="email">E-mail</label> 
+ 	                  <input type="text" class="form-control" id="email" placeholder="Enter Name" name="email" value="{{ auth()->user()->email }}"> 
+ 				        @if ($errors->has('email')) 
+ 				            <span class="help-block"> 
+ 				                <strong>{{ $errors->first('email') }}</strong> 
+ 				            </span> 
+ 				        @endif   	                   
+ 	                </div> 
+									 
  	                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}"> 
  	                  <label for="oldPassword">รหัสผ่านเดิม</label> 
  	                  <input type="password" class="form-control" id="password" placeholder="Old Password" name="password"> 

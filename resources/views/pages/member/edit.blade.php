@@ -49,7 +49,7 @@
  				        @endif   	                   
  	                </div> 
                      <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}"> 
- 	                  <label for="email">ชื่อ</label> 
+ 	                  <label for="email">E-mail</label> 
  	                  <input type="text" class="form-control" id="email" placeholder="Enter Name" name="email" value="{{ auth()->user()->email }}"> 
  				        @if ($errors->has('email')) 
  				            <span class="help-block"> 
