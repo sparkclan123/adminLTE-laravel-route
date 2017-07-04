@@ -57,15 +57,7 @@
  				            </span> 
  				        @endif   	                   
  	                </div> 
- 	                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}"> 
- 	                  <label for="oldPassword">รหัสผ่านเดิม</label> 
- 	                  <input type="password" class="form-control" id="password" placeholder="Old Password" name="password"> 
- 				        @if ($errors->has('password')) 
- 				            <span class="help-block"> 
- 				                <strong>{{ $errors->first('password') }}</strong> 
- 				            </span> 
- 				        @endif   		                   
- 	                </div> 
+ 	          
  	                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}"> 
  	                  <label for="newPassword">รหัสผ่านใหม่</label> 
  	                  <input type="password" class="form-control" id="password" placeholder="New Password" name="password"> 

@@ -68,7 +68,7 @@ class MemberController extends Controller
  		$this->validate( request(), [ 
              'name' => 'required|string|max:255|min:3', 
              'email' => 'required|string|max:255|min:3', 
-             'password' => 'required|password', 
+           
              'password' => 'required|string|min:6|confirmed', 
  			]); 
   
