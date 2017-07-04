@@ -18,21 +18,37 @@
             
     <form action="/registermember" method="post" form class="modal-body">
      {{csrf_field()}}
+     {{--  --}}
       <div class="form-group has-feedback">
         <input type="text" class="form-control" name="name" id="name" placeholder="Full name">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    <span class="help-block"> 
+ 				                 <p style="color:red"><strong>{{ $errors->first('name') }}</strong> </p>
+ 				            </span> 
       </div>
+      {{--  --}}
       <div class="form-group has-feedback">
         <input type="email" class="form-control" name="email" id="email" placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                    <span class="help-block"> 
+ 				                <p style="color:red"> <strong>{{ $errors->first('email') }}</strong> </p>
+ 				            </span> 
       </div>
+      {{--  --}}
       <div class="form-group has-feedback">
         <input type="password" class="form-control" name="password" id="password" placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    <span class="help-block"> 
+ 				                 <p style="color:red"><strong>{{ $errors->first('password') }}</strong> </p>
+ 				            </span> 
       </div>
+      {{--  --}}
       <div class="form-group has-feedback">
         <input type="password" class="form-control" name="retype_password" id="password" placeholder="Retype password">
         <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+                    <span class="help-block"> 
+ 				                 <p style="color:red"><strong>{{ $errors->first('retype_password') }}</strong> </p>
+ 				            </span> 
       </div> 
      
         <!-- /.col -->

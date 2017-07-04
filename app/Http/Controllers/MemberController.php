@@ -27,6 +27,13 @@ class MemberController extends Controller
     {
                 //$input = request()->email;
                 //return $input;
+ $rules = [
+                    'name'=> 'required|string|max:255|min:3',
+                    'email'=> 'required|string|max:255|min:3',
+                    'password'=> 'required|string|min:6',
+                    'retype_password'=> 'required|string|min:6'
+                   
+                ];
 
                 $name = request('name');
                 $email = request('email');
@@ -34,7 +41,8 @@ class MemberController extends Controller
                 $Rpassword = request('password');
                 $cretype_password = request('retype_password');
                 $retype_password = bcrypt(request('retype_password'));
-              
+                
+               $this->validate($request, $rules);
                 //   $this->validate($request, $rules);
                   if($Rpassword==$cretype_password){
                      DB::table('users')->insert([
