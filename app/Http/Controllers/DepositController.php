@@ -101,7 +101,7 @@ class DepositController extends Controller
             //validate คือการกำหนดข้อมูลที่จะทำการบันทึกให้มีเงื่อนไขในการกรอก
                 $this->validate($request, $rules);
 
-            try{
+            try{ 
             DB::table('deposit')
                 ->where('id',$id)
                 ->update($input);

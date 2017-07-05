@@ -36,6 +36,8 @@ Route::post('/registermember','MemberController@storemember');
 Route::get('/pages/member/edit','MemberController@edit');
 Route::post('/edit', 'MemberController@updateedit'); 
 Route::delete('/delete/{user}','MemberController@destroy');
+
+
 Route::get('/profile', 'ProfileController@index');	 
 Route::post('/profile', 'ProfileController@update'); 
 
@@ -45,9 +47,10 @@ Route::get('/pages/balance/list','DepositController@show');
 Route::get('/pages/balance/{deposit}/edit','DepositController@edit');
 Route::post('/deposit/{deposit}','DepositController@update');
 
-
-
-});
+Route::get('/pages/withdraw/withdraw','WithdrawController@create');
+Route::post('/withdraw','WithdrawController@store');
+Route::get('/pages/withdraw/list','WithdrawController@show');
+}); 
 
  
  

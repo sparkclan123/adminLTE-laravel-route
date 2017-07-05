@@ -57,8 +57,18 @@
           <ul class="treeview-menu">
             <li><a href="/pages/balance/deposit"><i class="fa fa-circle-o"></i> เเจ้งฝากเงิน</a></li>
             <li><a href="/pages/balance/list"><i class="fa fa-circle-o"></i> รายการฝากเงิน</a></li>
-            <li><a href="/pages/balance/edit"><i class="fa fa-circle-o"></i> เเก้ไขรายการฝากเงิน</a></li>
-         
           </ul>
        
+            <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dollar"></i>
+            <span>เเจ้งถอนเงิน</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/pages/withdraw/withdraw"><i class="fa fa-circle-o"></i> เเจ้งถอนเงิน</a></li>
+            <li><a href="/pages/withdraw/list"><i class="fa fa-circle-o"></i> รายการเเจ้งการถอนเงิน</a></li>
+          </ul>
     </section>
