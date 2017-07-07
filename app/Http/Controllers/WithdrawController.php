@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 class WithdrawController extends Controller
 {
-     public function create()
+     public function create() 
     {
         
          return view('pages/withdraw/withdraw');

@@ -50,6 +50,9 @@ Route::post('/deposit/{deposit}','DepositController@update');
 Route::get('/pages/withdraw/withdraw','WithdrawController@create');
 Route::post('/withdraw','WithdrawController@store');
 Route::get('/pages/withdraw/list','WithdrawController@show');
+
+Route::get('/activitylog/activitylog','ActivitylogController@create');
+
 }); 
 
  

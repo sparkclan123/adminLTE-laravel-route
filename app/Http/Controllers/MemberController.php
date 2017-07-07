@@ -29,7 +29,7 @@ class MemberController extends Controller
                 //return $input;
  $rules = [
                     'name'=> 'required|string|max:255|min:3',
-                    'email'=> 'required|string|max:255|min:3',
+                    'email'=> 'required|string|email|max:255|unique:users,email',
                     'password'=> 'required|string|min:6',
                     'retype_password'=> 'required|string|min:6'
                    

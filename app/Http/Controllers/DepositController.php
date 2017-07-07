@@ -52,7 +52,7 @@ class DepositController extends Controller
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
-     */
+     */ 
     public function show()
     {
        $deposit = DB::table('deposit')

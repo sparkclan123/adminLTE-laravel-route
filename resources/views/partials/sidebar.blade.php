@@ -22,53 +22,66 @@
       </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
-    <ul class="sidebar-menu">
-        <li class="header">MAIN NAVIGATION</li>
+      <ul class="sidebar-menu">
+            <li class="header">MAIN NAVIGATION</li>
+              <li class="treeview">
+                <a href="#">
+                  <i class="fa fa-dashboard"></i> <span>Manu</span>
+                
+                  </span>
+                </a>
+            
+              </li>
         <li class="treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Manu</span>
-           
-            </span>
-          </a>
-       
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-child"></i>
-            <span>จัดการสมาชิก</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="/pages/member/add"><i class="fa fa-circle-o"></i> เพิ่มสมาชิก</a></li>
-            <li><a href="/pages/member/list"><i class="fa fa-circle-o"></i> รายชื่อสมาชิก</a></li>
-         
-          </ul>
+              <a href="#">
+                <i class="fa fa-child"></i>
+                <span>จัดการสมาชิก</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="/pages/member/add"><i class="fa fa-circle-o"></i> เพิ่มสมาชิก</a></li>
+                <li><a href="/pages/member/list"><i class="fa fa-circle-o"></i> รายชื่อสมาชิก</a></li>
+            
+              </ul>
 
            <li class="treeview">
-          <a href="#">
-            <i class="fa fa-credit-card"></i>
-            <span>เเจ้งฝากเงิน</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="/pages/balance/deposit"><i class="fa fa-circle-o"></i> เเจ้งฝากเงิน</a></li>
-            <li><a href="/pages/balance/list"><i class="fa fa-circle-o"></i> รายการฝากเงิน</a></li>
-          </ul>
+                <a href="#">
+                  <i class="fa fa-credit-card"></i>
+                  <span>เเจ้งฝากเงิน</span>
+                  <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="/pages/balance/deposit"><i class="fa fa-circle-o"></i> เเจ้งฝากเงิน</a></li>
+                  <li><a href="/pages/balance/list"><i class="fa fa-circle-o"></i> รายการฝากเงิน</a></li>
+                </ul>
        
             <li class="treeview">
-          <a href="#">
-            <i class="fa fa-dollar"></i>
-            <span>เเจ้งถอนเงิน</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="/pages/withdraw/withdraw"><i class="fa fa-circle-o"></i> เเจ้งถอนเงิน</a></li>
-            <li><a href="/pages/withdraw/list"><i class="fa fa-circle-o"></i> รายการเเจ้งการถอนเงิน</a></li>
-          </ul>
+                <a href="#">
+                  <i class="fa fa-dollar"></i>
+                  <span>เเจ้งถอนเงิน</span>
+                  <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="/pages/withdraw/withdraw"><i class="fa fa-circle-o"></i> เเจ้งถอนเงิน</a></li>
+                  <li><a href="/pages/withdraw/list"><i class="fa fa-circle-o"></i> รายการเเจ้งการถอนเงิน</a></li>
+                </ul>
+
+                 <li class="treeview">
+                <a href="#">
+                  <i class="fa fa-users"></i>
+                  <span> activity log</span>
+                  <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="/activitylog/activitylog"><i class="fa fa-circle-o"></i>  activity log</a></li>
+                 
+                </ul>
     </section>
